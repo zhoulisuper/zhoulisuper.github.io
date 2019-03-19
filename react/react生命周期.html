@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React生命周期 | zhouli的博客</title>
+    <meta name="description" content="网站描述">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.a90de6eb.css" as="style"><link rel="preload" href="/assets/js/app.c4e7c547.js" as="script"><link rel="preload" href="/assets/js/24.9b0b9082.js" as="script"><link rel="preload" href="/assets/js/4.5628d1f8.js" as="script"><link rel="prefetch" href="/assets/js/10.e4d6374f.js"><link rel="prefetch" href="/assets/js/11.3b072d34.js"><link rel="prefetch" href="/assets/js/12.3df17d56.js"><link rel="prefetch" href="/assets/js/13.30af94ab.js"><link rel="prefetch" href="/assets/js/14.68291743.js"><link rel="prefetch" href="/assets/js/15.846a51e5.js"><link rel="prefetch" href="/assets/js/16.6fa709ae.js"><link rel="prefetch" href="/assets/js/17.794612c8.js"><link rel="prefetch" href="/assets/js/18.88918131.js"><link rel="prefetch" href="/assets/js/19.01df9257.js"><link rel="prefetch" href="/assets/js/20.dee359b9.js"><link rel="prefetch" href="/assets/js/21.658837c9.js"><link rel="prefetch" href="/assets/js/22.4547ae34.js"><link rel="prefetch" href="/assets/js/23.fd4b2884.js"><link rel="prefetch" href="/assets/js/25.511dc4f5.js"><link rel="prefetch" href="/assets/js/26.4b2c3113.js"><link rel="prefetch" href="/assets/js/27.818bab65.js"><link rel="prefetch" href="/assets/js/3.7802eb18.js"><link rel="prefetch" href="/assets/js/5.dddde689.js"><link rel="prefetch" href="/assets/js/6.8346498c.js"><link rel="prefetch" href="/assets/js/7.aad6ccca.js"><link rel="prefetch" href="/assets/js/8.7bfd6794.js"><link rel="prefetch" href="/assets/js/9.0b39a487.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.fa8a9be0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a90de6eb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header id="navbarWrapper" class="navbar"><div class="sidebar-button"><i class="iconfont reco-menu"></i></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">zhouli的博客</span></a> <div class="links" style="max-width:nullpx;"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tags
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-up"></i>
+      博文
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  React学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link"><i class="iconfont undefined"></i>
+  使用 GitHub Pages 和 VuePress 搭建网站
+</a></li><li class="dropdown-item"><!----> <a href="/Interview/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题汇总
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/yshysh123" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  </a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tags
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-up"></i>
+      博文
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  React学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link"><i class="iconfont undefined"></i>
+  使用 GitHub Pages 和 VuePress 搭建网站
+</a></li><li class="dropdown-item"><!----> <a href="/Interview/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题汇总
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/yshysh123" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  </a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/react/classnames.html" class="sidebar-link">classnames</a></li><li><a href="/react/propTypes.html" class="sidebar-link">propTypes</a></li><li><a href="/react/react16-hooks.html" class="sidebar-link">React Hooks</a></li><li><a href="/react/react生命周期.html" class="active sidebar-link">React生命周期</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/react/react生命周期.html#生命周期调用顺序" class="sidebar-link">生命周期调用顺序</a></li><li class="sidebar-sub-header"><a href="/react/react生命周期.html#生命周期调用小案例" class="sidebar-link">生命周期调用小案例</a></li><li class="sidebar-sub-header"><a href="/react/react生命周期.html#react16-新增的-2-个生命周期" class="sidebar-link">React16 新增的 2 个生命周期</a></li></ul></li><li><a href="/react/react_comp.html" class="sidebar-link">如何开发高度复用的 React UI 组件</a></li></ul></div></li></ul> </div> <div class="page" data-v-4bd020d4> <div class="page-title" data-v-4bd020d4><h1 data-v-4bd020d4>React生命周期</h1> <hr data-v-4bd020d4> <div data-v-2c25cede data-v-4bd020d4><i class="iconfont reco-account" data-v-2c25cede><span data-v-2c25cede>yush</span></i> <i class="iconfont reco-date" data-v-2c25cede><span data-v-2c25cede>2019-2-6</span></i> <!----> <i class="iconfont reco-tag tags" data-v-2c25cede><span class="tag-item" data-v-2c25cede>
+      react
+    </span></i></div></div> <div class="content" data-v-4bd020d4><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>React 生命周期 React16 之后，官方列举出 3 个在未来版本中即将废弃的生命周期，新增了 2 个生命周期。</p></div> <h1 id="react-生命周期"><a href="#react-生命周期" aria-hidden="true" class="header-anchor">#</a> React 生命周期</h1> <h2 id="生命周期调用顺序"><a href="#生命周期调用顺序" aria-hidden="true" class="header-anchor">#</a> 生命周期调用顺序</h2> <p>渲染过程调用到的生命周期函数，主要几个要知道：</p> <ul><li>constructor</li> <li>getInitialState</li> <li>getDefaultProps</li> <li>componentWillMount //react16 之后即将移除</li> <li>render</li> <li>componentDidMount
+更新过程</li> <li>componentWillReceiveProps //react16 之后即将移除</li> <li>shouldComponentUpdate</li> <li>componentWillUpdate //react16 之后即将移除</li> <li>render</li> <li>componentDidUpdate
+卸载过程</li> <li>componentWillUnmount</li></ul> <h2 id="生命周期调用小案例"><a href="#生命周期调用小案例" aria-hidden="true" class="header-anchor">#</a> 生命周期调用小案例</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">import</span> React from <span class="token string">'react'</span>
+<span class="token function">import</span> ReactDOM from <span class="token string">'react-dom'</span><span class="token punctuation">;</span>
+
+class SubCounter extends React.Component <span class="token punctuation">{</span>
+    componentWillReceiveProps<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console.log<span class="token punctuation">(</span><span class="token string">'9、子组件将要接收到新属性'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    shouldComponentUpdate<span class="token punctuation">(</span>newProps, newState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console.log<span class="token punctuation">(</span><span class="token string">'10、子组件是否需要更新'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>newProps.number <span class="token operator">&lt;</span> 5<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+    componentWillUpdate<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console.log<span class="token punctuation">(</span><span class="token string">'11、子组件将要更新'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    componentDidUpdate<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console.log<span class="token punctuation">(</span><span class="token string">'13、子组件更新完成'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    componentWillUnmount<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console.log<span class="token punctuation">(</span><span class="token string">'14、子组件将卸载'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    render<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console.log<span class="token punctuation">(</span><span class="token string">'12、子组件挂载中'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>
+                <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token punctuation">{</span>this.props.number<span class="token punctuation">}</span><span class="token operator">&lt;</span>/p<span class="token operator">&gt;</span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+class Counter extends React.Component <span class="token punctuation">{</span>
+    static defaultProps <span class="token operator">=</span> <span class="token punctuation">{</span>
+        //1、加载默认属性
+        name: <span class="token string">'sls'</span>,
+        age:23
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    constructor<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        super<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        //2、加载默认状态
+        this.state <span class="token operator">=</span> <span class="token punctuation">{</span>number: 0<span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    componentWillMount<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console.log<span class="token punctuation">(</span><span class="token string">'3、父组件挂载之前'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    componentDidMount<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console.log<span class="token punctuation">(</span><span class="token string">'5、父组件挂载完成'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    shouldComponentUpdate<span class="token punctuation">(</span>newProps, newState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console.log<span class="token punctuation">(</span><span class="token string">'6、父组件是否需要更新'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>newState.number<span class="token operator">&lt;</span>15<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+    componentWillUpdate<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console.log<span class="token punctuation">(</span><span class="token string">'7、父组件将要更新'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    componentDidUpdate<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console.log<span class="token punctuation">(</span><span class="token string">'8、父组件更新完成'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    handleClick <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        this.setState<span class="token punctuation">(</span><span class="token punctuation">{</span>
+            number: this.state.number + 1
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    render<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console.log<span class="token punctuation">(</span><span class="token string">'4、render(父组件挂载)'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token punctuation">{</span>this.state.number<span class="token punctuation">}</span><span class="token operator">&lt;</span>/p<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span>this.handleClick<span class="token punctuation">}</span><span class="token operator">&gt;</span>+<span class="token operator">&lt;</span>/button<span class="token operator">&gt;</span>
+                <span class="token punctuation">{</span>this.state.number<span class="token operator">&lt;</span>10?<span class="token operator">&lt;</span>SubCounter number<span class="token operator">=</span><span class="token punctuation">{</span>this.state.number<span class="token punctuation">}</span>/<span class="token operator">&gt;</span>:null<span class="token punctuation">}</span>
+            <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+ReactDOM.render<span class="token punctuation">(</span><span class="token operator">&lt;</span>Counter/<span class="token operator">&gt;</span>, document.getElementById<span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br></div></div><h2 id="react16-新增的-2-个生命周期"><a href="#react16-新增的-2-个生命周期" aria-hidden="true" class="header-anchor">#</a> React16 新增的 2 个生命周期</h2> <ul><li>getDerivedStateFromProps</li></ul> <p>getDerivedStateFromProps 用于替换 componentWillReceiveProps ，该函数会在初始化和 update 时被调用</p> <ul><li>getSnapshotBeforeUpdate</li></ul> <p>getSnapshotBeforeUpdate 用于替换 componentWillUpdate ，该函数会在 update 后 DOM 更新前被调用，用于读取最新的 DOM 数据。</p> <section style="border-top:2px solid #eaecef;padding-top:1rem;margin-top:2rem;"><div><span data-flag-title="Your Article Title" class="leancloud-visitors"><em class="post-meta-item-text">阅读量：</em> <i class="leancloud-visitors-count"></i></span></div> <h3><a href="javascript:;"></a>
+    评 论：
+  </h3> <div id="vcomments"></div></section></div> <!----> <!----> <div class="page-edit" data-v-4bd020d4><!----> <div class="last-updated" data-v-4bd020d4><span class="prefix" data-v-4bd020d4>Last Updated: </span> <span class="time" data-v-4bd020d4>3/19/2019, 10:46:08 AM</span></div></div> <!----> </div> <div class="valine-wrapper" data-v-63f18ac0><div id="valine" style="display:;" data-v-63f18ac0></div></div> <!----> <!----> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-41016a8b data-v-41016a8b><i class="iconfont reco-up" data-v-41016a8b></i></div></div></div>
+    <script src="/assets/js/app.c4e7c547.js" defer></script><script src="/assets/js/24.9b0b9082.js" defer></script><script src="/assets/js/4.5628d1f8.js" defer></script>
+  </body>
+</html>

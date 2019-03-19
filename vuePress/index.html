@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>用 vuepress 搭建静态博客 | zhouli的博客</title>
+    <meta name="description" content="网站描述">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.a90de6eb.css" as="style"><link rel="preload" href="/assets/js/app.c4e7c547.js" as="script"><link rel="preload" href="/assets/js/26.4b2c3113.js" as="script"><link rel="prefetch" href="/assets/js/10.e4d6374f.js"><link rel="prefetch" href="/assets/js/11.3b072d34.js"><link rel="prefetch" href="/assets/js/12.3df17d56.js"><link rel="prefetch" href="/assets/js/13.30af94ab.js"><link rel="prefetch" href="/assets/js/14.68291743.js"><link rel="prefetch" href="/assets/js/15.846a51e5.js"><link rel="prefetch" href="/assets/js/16.6fa709ae.js"><link rel="prefetch" href="/assets/js/17.794612c8.js"><link rel="prefetch" href="/assets/js/18.88918131.js"><link rel="prefetch" href="/assets/js/19.01df9257.js"><link rel="prefetch" href="/assets/js/20.dee359b9.js"><link rel="prefetch" href="/assets/js/21.658837c9.js"><link rel="prefetch" href="/assets/js/22.4547ae34.js"><link rel="prefetch" href="/assets/js/23.fd4b2884.js"><link rel="prefetch" href="/assets/js/24.9b0b9082.js"><link rel="prefetch" href="/assets/js/25.511dc4f5.js"><link rel="prefetch" href="/assets/js/27.818bab65.js"><link rel="prefetch" href="/assets/js/3.7802eb18.js"><link rel="prefetch" href="/assets/js/4.5628d1f8.js"><link rel="prefetch" href="/assets/js/5.dddde689.js"><link rel="prefetch" href="/assets/js/6.8346498c.js"><link rel="prefetch" href="/assets/js/7.aad6ccca.js"><link rel="prefetch" href="/assets/js/8.7bfd6794.js"><link rel="prefetch" href="/assets/js/9.0b39a487.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.fa8a9be0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a90de6eb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header id="navbarWrapper" class="navbar"><div class="sidebar-button"><i class="iconfont reco-menu"></i></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">zhouli的博客</span></a> <div class="links" style="max-width:nullpx;"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tags
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-up"></i>
+      博文
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link"><i class="iconfont undefined"></i>
+  React学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link router-link-exact-active router-link-active"><i class="iconfont undefined"></i>
+  使用 GitHub Pages 和 VuePress 搭建网站
+</a></li><li class="dropdown-item"><!----> <a href="/Interview/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题汇总
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/yshysh123" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  </a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tags
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-up"></i>
+      博文
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link"><i class="iconfont undefined"></i>
+  React学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link router-link-exact-active router-link-active"><i class="iconfont undefined"></i>
+  使用 GitHub Pages 和 VuePress 搭建网站
+</a></li><li class="dropdown-item"><!----> <a href="/Interview/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题汇总
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/yshysh123" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  </a></div> <!----></nav>  <!----> </div> <div class="page" data-v-4bd020d4> <!----> <div class="content" data-v-4bd020d4><h1 id="本文将讲述如何用-vuepress-搭建静态博客"><a href="#本文将讲述如何用-vuepress-搭建静态博客" aria-hidden="true" class="header-anchor">#</a> 本文将讲述如何用 vuepress 搭建静态博客</h1> <h2 id="前言"><a href="#前言" aria-hidden="true" class="header-anchor">#</a> 前言</h2> <p>为什么要建立自己的博客？——<a href="https://zhuanlan.zhihu.com/p/19743861?columnSlug=cnfeat" target="_blank" rel="noopener noreferrer">引自:为什么你要写博客？—陈素封<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <ol><li><p>“提高将事情讲清楚的能力”.</p> <p>在写博客之前你需要花更多的时间来表达出你的想法，表达你想法之前你得先对你要表达的东西充分理解并理清思路和逻辑。很多东西你以为懂了，但当你在写下来的时候，你就觉得无从下手了。</p></li> <li><p>分享带来的连锁反应</p> <p>“通过分享，你获得了直接而快速的回报，你最终或许会发现你已将版权和“保留所有权利”抛诸脑后。新的经济学准则是：参与你作品的人越多，回报越高。在分享主义里，如果你愿意你可以保留所有权，但是我乐于分享。” by 毛向辉 《分享主义：一场思维革命》</p></li> <li><p>记录成长</p> <p>我们每个人都应该有这样的经历:隔了很久我们回头看看以前的自己会发现特别傻 x,但正是因为这些傻 x 的岁月让我们不断成长,你在成长的过程中不断的修正自己的错误。</p></li> <li><p>探索未知的世界</p> <p>世界不止是你的家，你的公司，你的朋友圈，你应该去发现一个更大的世界，通过写博客，你会知道世界上还有很多人像你一样在写博客，这些人和知识正在世界的某个角落在等着你。</p></li> <li><p>帮助更多想要获取帮助的人</p> <p>这点我相信大家由为感触,在你探索一个未知的知识领域的时候,往往被撞的一鼻子灰.幸运的人很快就能找到一个“师傅”或一篇很好的文章,但大多数往往在找“教程”的过程中就已经放弃了.因为他们没能够找到刚好理解的文章.</p></li></ol> <h2 id="准备工作"><a href="#准备工作" aria-hidden="true" class="header-anchor">#</a> 准备工作</h2> <ul><li>github 账号一枚</li> <li>node 环境（推荐使用最新稳定版，至少 8.0.0 以上）</li> <li>git bash</li></ul> <h2 id="_1-开始搭建-github-pages"><a href="#_1-开始搭建-github-pages" aria-hidden="true" class="header-anchor">#</a> 1.开始搭建 Github Pages</h2> <ol><li>注册属于你自己的 Github 账号</li> <li>创建仓库（当你的仓库名称是：用户名.github.io 时候，会默认开启 Github Page=&gt;步骤 3）</li> <li>开启 Github Pages</li></ol> <h2 id="_2-入手搭建-vuepress-博客"><a href="#_2-入手搭建-vuepress-博客" aria-hidden="true" class="header-anchor">#</a> 2.入手搭建 vuepress 博客</h2> <h3 id="首先先看一下-vuepress-的特性"><a href="#首先先看一下-vuepress-的特性" aria-hidden="true" class="header-anchor">#</a> 首先先看一下 vuePress 的特性</h3> <ul><li>为技术文档而优化的 内置 Markdown 拓展</li> <li>在 Markdown 文件中使用 Vue 组件的能力</li> <li>Vue 驱动的自定义主题系统</li> <li>自动生成 Service Worker</li> <li>oogle Analytics 集成</li> <li>基于 Git 的 “最后更新时间”</li> <li>多语言支持</li> <li>多种默认主题</li></ul> <h3 id="下面让我们来进行搭建："><a href="#下面让我们来进行搭建：" aria-hidden="true" class="header-anchor">#</a> 下面让我们来进行搭建：</h3> <ol><li>全局安装 VuePress</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>yarn global add vuepress <span class="token comment"># 或者：npm install -g vuepress</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="2"><li>新建文件夹并进入</li></ol> <p>选好一个项目路径，可以 windows 下手动创建文件夹 也可以用 linux 命令创建</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">mkdir</span> vuePress
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>进入刚才创建的文件夹</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">cd</span> vuePress
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="3"><li>项目初始化</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>yarn init -y <span class="token comment"># 或者 npm init -y</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>稍等片刻，在文件夹下会出现一个文件：package.json，打开看看</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;vuePress&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;version&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;description&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;main&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;scripts&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;test&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;keywords&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;author&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;license&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ISC&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ol start="4"><li>在这个文件夹下创建 docs 文件夹</li></ol> <p>这个文档将作为项目文档的根目录来使用：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">mkdir</span> docs
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="5"><li>在 docs 文件夹下创建.vuepress 文件夹：</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">mkdir</span> .vuepress
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>所有 VuePress 相关的文件都将会被放在这里</p> <ol start="6"><li>在.vuepress 文件夹下面创建 config.js:</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">touch</span> config.js
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>config.js 是 VuePress 必要的配置文件，它导出一个 javascript 对象。</p> <p>你可以先加入如下配置：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token string">&quot;Hello VuePress&quot;</span><span class="token punctuation">,</span>
+  description<span class="token punctuation">:</span> <span class="token string">&quot;Just playing around&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="7"><li>在.vuepress 文件夹下面创建 public 文件夹:</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">mkdir</span> public
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这个文件夹是用来放置静态资源的，打包出来之后会放在.vuepress/dist/的根目录。</p> <ol start="8"><li>首页(像 VuePress 文档主页一样)</li></ol> <ul><li>在 docs 文件夹下面创建一个 README.md：</li> <li>默认的主题提供了一个首页，像下面一样设置 home:true 即可，可以把下面的设置放入 README.md 中，待会儿你将会看到跟 VuePress 一样的主页。</li></ul> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token operator">--</span><span class="token operator">-</span>
+home<span class="token punctuation">:</span> <span class="token boolean">true</span>
+heroImage<span class="token punctuation">:</span> <span class="token operator">/</span>头像<span class="token punctuation">.</span>png
+actionText<span class="token punctuation">:</span> 快速上手 →
+actionLink<span class="token punctuation">:</span> <span class="token regex">/guide/</span>
+features<span class="token punctuation">:</span>
+  <span class="token operator">-</span> title<span class="token punctuation">:</span> 简洁至上
+    details<span class="token punctuation">:</span> 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+  <span class="token operator">-</span> title<span class="token punctuation">:</span> Vue驱动
+    details<span class="token punctuation">:</span> 享受 Vue <span class="token operator">+</span> webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
+  <span class="token operator">-</span> title<span class="token punctuation">:</span> 高性能
+    details<span class="token punctuation">:</span> VuePress 为每个页面预渲染生成静态的 <span class="token constant">HTML</span>，同时在页面被加载的时候，将作为 <span class="token constant">SPA</span> 运行。
+footer<span class="token punctuation">:</span> <span class="token constant">MIT</span> Licensed <span class="token operator">|</span> Copyright © <span class="token number">2019</span><span class="token operator">-</span>present Sihong Yu
+<span class="token operator">--</span><span class="token operator">-</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>ps：你需要放一张图片头像.png 到 public 文件夹中。</p> <p>到此我们的项目结构已经搭好了：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>project
+├─── docs
+│ ├── README.md
+│ └── .vuepress
+│ ├── public
+│ └── config.js
+└── package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>在 package.json 里添加两个启动命令:</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;scripts&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;docs:dev&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;docs:build&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>启动你的 VuePress：
+默认是 localhost:8080 端口。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>yarn docs:dev <span class="token comment"># 或者：npm run docs:dev</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>构建：
+build 生成静态的 HTML 文件,默认会在 .vuepress/dist 文件夹下</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>yarn docs:build <span class="token comment"># 或者：npm run docs:build</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>基本配置：</p> <p>最标准的当然是官方文档,可以自己的需求来配置 config.js。
+可以参考一下我的 config.js 的配置：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token string">&quot;zhouli的博客&quot;</span><span class="token punctuation">,</span>
+  description<span class="token punctuation">:</span> <span class="token string">&quot;网站描述&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 注入到当前页面的 HTML &lt;head&gt; 中的标签</span>
+  head<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;link&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token punctuation">:</span> <span class="token string">&quot;icon&quot;</span><span class="token punctuation">,</span> href<span class="token punctuation">:</span> <span class="token string">&quot;/favicon.ico&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">]</span> <span class="token comment">// 增加一个自定义的 favicon(网页标签的图标)</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  base<span class="token punctuation">:</span> <span class="token string">&quot;/&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 这是部署到github相关的配置 下面会讲</span>
+  markdown<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    lineNumbers<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token comment">// 代码块显示行号</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    sidebarDepth<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">// e'b 将同时提取 markdown 中 h2 和 h3 标题，显示在侧边栏上。</span>
+    lastUpdated<span class="token punctuation">:</span> <span class="token string">&quot;Last Updated&quot;</span><span class="token punctuation">,</span>
+    serviceWorker<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      updatePopup<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token comment">// Boolean | Object, 默认值是 undefined.</span>
+      <span class="token comment">// 如果设置为 true, 默认的文本配置将是:</span>
+      <span class="token comment">// updatePopup: {</span>
+      <span class="token comment">//    message: &quot;New content is available.&quot;,</span>
+      <span class="token comment">//    buttonText: &quot;Refresh&quot;</span>
+      <span class="token comment">// }</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p>导航栏配置：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    nav<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">&quot;博文&quot;</span><span class="token punctuation">,</span>
+        items<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            text<span class="token punctuation">:</span> <span class="token string">&quot;React学习汇总&quot;</span><span class="token punctuation">,</span>
+            link<span class="token punctuation">:</span> <span class="token string">&quot;/react/&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            text<span class="token punctuation">:</span> <span class="token string">&quot;使用 GitHub Pages 和 VuePress 搭建网站&quot;</span><span class="token punctuation">,</span>
+            link<span class="token punctuation">:</span> <span class="token string">&quot;/vuepress/&quot;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">&quot;关于&quot;</span><span class="token punctuation">,</span>
+        link<span class="token punctuation">:</span> <span class="token string">&quot;/about/&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">&quot;GitHub&quot;</span><span class="token punctuation">,</span>
+        items<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">&quot;GitHub地址&quot;</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">&quot;https://github.com/zhoulisuper&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>侧边栏配置：</p> <p>侧边栏的配置相对麻烦点，我里面都做了详细的注释，仔细看，自己鼓捣鼓捣 就知道怎么搞了。</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  sidebar<span class="token punctuation">:</span><span class="token punctuation">{</span>
+    <span class="token string">&quot;/guide/&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        title<span class="token punctuation">:</span> <span class="token string">&quot;Titanium Guides&quot;</span><span class="token punctuation">,</span>
+        collapsable<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        children<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;prerequisites&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;getting-started&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;first-app&quot;</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;/react/&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        title<span class="token punctuation">:</span> <span class="token string">&quot;React学习总结&quot;</span><span class="token punctuation">,</span>
+        collapsable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+          <span class="token string">&quot;classnames&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;propTypes&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;react16-hooks&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;react生命周期&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;react_comp&quot;</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;/about/&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">[</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;README&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">[</span><span class="token string">&quot;GithubPages&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;GithubPages&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">[</span><span class="token string">&quot;VuePress&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;VuePress&quot;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><p>一个命令行发布到 github 上：</p> <p>在 project 的根目录下，创建一个 deploy.sh 文件：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment">#!/usr/bin/env sh</span>
+
+<span class="token comment"># 确保脚本抛出遇到的错误</span>
+<span class="token keyword">set</span> -e
+
+<span class="token comment"># 生成静态文件</span>
+<span class="token function">npm</span> run docs:build
+
+<span class="token comment"># 进入生成的文件夹</span>
+<span class="token function">cd</span> docs/.vuepress/dist
+
+<span class="token comment"># 如果是发布到自定义域名</span>
+<span class="token comment"># echo 'www.example.com' &gt; CNAME</span>
+
+<span class="token function">git</span> init
+<span class="token function">git</span> add -A
+<span class="token function">git</span> commit -m <span class="token string">'deploy'</span>
+
+<span class="token comment"># 如果发布到 https://&lt;USERNAME&gt;.github.io  USERNAME=你的用户名</span>
+<span class="token function">git</span> push -f https://github.com/yshysh123/yshysh123.github.io master
+
+<span class="token comment"># 如果发布到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;  REPO=github上的项目</span>
+<span class="token comment"># git push -f git@github.com:&lt;USERNAME&gt;/&lt;REPO&gt;.git master:gh-pages</span>
+
+<span class="token function">cd</span> -
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p>设置 package.json：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;scripts&quot;</span><span class="token keyword">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;d&quot;</span><span class="token keyword">:</span> <span class="token string">&quot;bash deploy.sh&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>部署：</p> <p>然后你每次可以运行下面的命令行，来把最新更改推到 github 上：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> run d
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>最终的 package.json 文件如下：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token string">&quot;scripts&quot;</span><span class="token keyword">:</span> <span class="token punctuation">{</span>
+  <span class="token string">&quot;dev&quot;</span><span class="token keyword">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span>, // 本地运行项目 <span class="token function">npm</span> run dev
+  <span class="token string">&quot;build&quot;</span><span class="token keyword">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>, // 构建项目 nom run build
+  <span class="token string">&quot;d&quot;</span><span class="token keyword">:</span> <span class="token string">&quot;bash deploy.sh&quot;</span> // 部署项目 <span class="token function">npm</span> run d
+<span class="token punctuation">}</span>,
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>结语</p> <p>以上就是如何利用 vuepress 和 github 的 page 搭建一个个人博客的详细教程了。相信跟着我的步骤，一步一步的来，很快就能搭建成功咯。</p></div> <div currentPage="1" class="categories-wrapper" data-v-4bd020d4><div class="abstract-wrapper" data-v-58cd78a5></div> <div class="pagation" style="display:none;" data-v-6f2dd17a><div class="pagation-list" data-v-6f2dd17a><span unselectable="on" class="jump" style="display:none;" data-v-6f2dd17a>Prev</span> <span class="jump" style="display:none;" data-v-6f2dd17a>1</span> <span class="ellipsis" style="display:none;" data-v-6f2dd17a>...</span>  <span class="ellipsis" style="display:none;" data-v-6f2dd17a>...</span> <span class="jump" style="display:none;" data-v-6f2dd17a>0</span> <span class="jump" style="display:none;" data-v-6f2dd17a>Next</span> <span class="jumppoint" data-v-6f2dd17a>跳转到：</span> <span class="jumpinp" data-v-6f2dd17a><input type="text" value="" data-v-6f2dd17a></span> <span class="jump gobtn" data-v-6f2dd17a>GO</span></div></div></div> <!----> <div class="page-edit" data-v-4bd020d4><!----> <div class="last-updated" data-v-4bd020d4><span class="prefix" data-v-4bd020d4>Last Updated: </span> <span class="time" data-v-4bd020d4>3/19/2019, 11:23:31 AM</span></div></div> <!----> </div> <div class="valine-wrapper" data-v-63f18ac0><div id="valine" style="display:;" data-v-63f18ac0></div></div> <!----> <!----> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-41016a8b data-v-41016a8b><i class="iconfont reco-up" data-v-41016a8b></i></div></div></div>
+    <script src="/assets/js/app.c4e7c547.js" defer></script><script src="/assets/js/26.4b2c3113.js" defer></script>
+  </body>
+</html>

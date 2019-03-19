@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React Hooks | zhouli的博客</title>
+    <meta name="description" content="网站描述">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.a90de6eb.css" as="style"><link rel="preload" href="/assets/js/app.c4e7c547.js" as="script"><link rel="preload" href="/assets/js/22.4547ae34.js" as="script"><link rel="preload" href="/assets/js/4.5628d1f8.js" as="script"><link rel="prefetch" href="/assets/js/10.e4d6374f.js"><link rel="prefetch" href="/assets/js/11.3b072d34.js"><link rel="prefetch" href="/assets/js/12.3df17d56.js"><link rel="prefetch" href="/assets/js/13.30af94ab.js"><link rel="prefetch" href="/assets/js/14.68291743.js"><link rel="prefetch" href="/assets/js/15.846a51e5.js"><link rel="prefetch" href="/assets/js/16.6fa709ae.js"><link rel="prefetch" href="/assets/js/17.794612c8.js"><link rel="prefetch" href="/assets/js/18.88918131.js"><link rel="prefetch" href="/assets/js/19.01df9257.js"><link rel="prefetch" href="/assets/js/20.dee359b9.js"><link rel="prefetch" href="/assets/js/21.658837c9.js"><link rel="prefetch" href="/assets/js/23.fd4b2884.js"><link rel="prefetch" href="/assets/js/24.9b0b9082.js"><link rel="prefetch" href="/assets/js/25.511dc4f5.js"><link rel="prefetch" href="/assets/js/26.4b2c3113.js"><link rel="prefetch" href="/assets/js/27.818bab65.js"><link rel="prefetch" href="/assets/js/3.7802eb18.js"><link rel="prefetch" href="/assets/js/5.dddde689.js"><link rel="prefetch" href="/assets/js/6.8346498c.js"><link rel="prefetch" href="/assets/js/7.aad6ccca.js"><link rel="prefetch" href="/assets/js/8.7bfd6794.js"><link rel="prefetch" href="/assets/js/9.0b39a487.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.fa8a9be0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a90de6eb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header id="navbarWrapper" class="navbar"><div class="sidebar-button"><i class="iconfont reco-menu"></i></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">zhouli的博客</span></a> <div class="links" style="max-width:nullpx;"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tags
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-up"></i>
+      博文
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  React学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link"><i class="iconfont undefined"></i>
+  使用 GitHub Pages 和 VuePress 搭建网站
+</a></li><li class="dropdown-item"><!----> <a href="/Interview/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题汇总
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/yshysh123" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  </a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tags
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-up"></i>
+      博文
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  React学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link"><i class="iconfont undefined"></i>
+  使用 GitHub Pages 和 VuePress 搭建网站
+</a></li><li class="dropdown-item"><!----> <a href="/Interview/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题汇总
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/yshysh123" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  </a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/react/classnames.html" class="sidebar-link">classnames</a></li><li><a href="/react/propTypes.html" class="sidebar-link">propTypes</a></li><li><a href="/react/react16-hooks.html" class="active sidebar-link">React Hooks</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/react/react16-hooks.html#hook-是一项新功能提案，可让您在不编写类的情况下使用状态和其他-react-功能。" class="sidebar-link">Hook 是一项新功能提案，可让您在不编写类的情况下使用状态和其他 React 功能。</a></li></ul></li><li><a href="/react/react生命周期.html" class="sidebar-link">React生命周期</a></li><li><a href="/react/react_comp.html" class="sidebar-link">如何开发高度复用的 React UI 组件</a></li></ul></div></li></ul> </div> <div class="page" data-v-4bd020d4> <div class="page-title" data-v-4bd020d4><h1 data-v-4bd020d4>React Hooks</h1> <hr data-v-4bd020d4> <div data-v-2c25cede data-v-4bd020d4><i class="iconfont reco-account" data-v-2c25cede><span data-v-2c25cede>yush</span></i> <i class="iconfont reco-date" data-v-2c25cede><span data-v-2c25cede>2019-2-6</span></i> <!----> <i class="iconfont reco-tag tags" data-v-2c25cede><span class="tag-item" data-v-2c25cede>
+      react
+    </span></i></div></div> <div class="content" data-v-4bd020d4><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>React16.7 以后，将全面支持 react Hooks 来在函数组件中使用状态及部分生命周期功能</p></div> <h1 id="react-hooks"><a href="#react-hooks" aria-hidden="true" class="header-anchor">#</a> React Hooks</h1> <h2 id="hook-是一项新功能提案，可让您在不编写类的情况下使用状态和其他-react-功能。"><a href="#hook-是一项新功能提案，可让您在不编写类的情况下使用状态和其他-react-功能。" aria-hidden="true" class="header-anchor">#</a> Hook 是一项新功能提案，可让您在不编写类的情况下使用状态和其他 React 功能。</h2> <h3 id="usestate"><a href="#usestate" aria-hidden="true" class="header-anchor">#</a> useState</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">import</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> from <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> Example<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  const <span class="token punctuation">[</span>count, setCount<span class="token punctuation">]</span> <span class="token operator">=</span> useState<span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>You clicked <span class="token punctuation">{</span>count<span class="token punctuation">}</span> times<span class="token operator">&lt;</span>/p<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> setCount<span class="token punctuation">(</span>count + 1<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+        Click me
+      <span class="token operator">&lt;</span>/button<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="useeffect"><a href="#useeffect" aria-hidden="true" class="header-anchor">#</a> useEffect</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>useEffect<span class="token punctuation">(</span>
+  <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    const subscription <span class="token operator">=</span> props.source.subscribe<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+      subscription.unsubscribe<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>,
+  <span class="token punctuation">[</span>props.source<span class="token punctuation">]</span>,
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><section style="border-top:2px solid #eaecef;padding-top:1rem;margin-top:2rem;"><div><span data-flag-title="Your Article Title" class="leancloud-visitors"><em class="post-meta-item-text">阅读量：</em> <i class="leancloud-visitors-count"></i></span></div> <h3><a href="javascript:;"></a>
+    评 论：
+  </h3> <div id="vcomments"></div></section></div> <!----> <!----> <div class="page-edit" data-v-4bd020d4><!----> <div class="last-updated" data-v-4bd020d4><span class="prefix" data-v-4bd020d4>Last Updated: </span> <span class="time" data-v-4bd020d4>3/19/2019, 10:46:08 AM</span></div></div> <div class="page-nav" data-v-4bd020d4><p class="inner" data-v-4bd020d4><span class="prev" data-v-4bd020d4>
+        ←
+        <a href="/react/propTypes.html" class="prev" data-v-4bd020d4>
+          propTypes
+        </a></span> <span class="next" data-v-4bd020d4><a href="/react/react生命周期.html" data-v-4bd020d4>
+          React生命周期
+        </a>
+        →
+      </span></p></div> </div> <div class="valine-wrapper" data-v-63f18ac0><div id="valine" style="display:;" data-v-63f18ac0></div></div> <!----> <!----> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-41016a8b data-v-41016a8b><i class="iconfont reco-up" data-v-41016a8b></i></div></div></div>
+    <script src="/assets/js/app.c4e7c547.js" defer></script><script src="/assets/js/22.4547ae34.js" defer></script><script src="/assets/js/4.5628d1f8.js" defer></script>
+  </body>
+</html>

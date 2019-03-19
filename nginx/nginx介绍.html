@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nginx介绍 | zhouli的博客</title>
+    <meta name="description" content="网站描述">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.a90de6eb.css" as="style"><link rel="preload" href="/assets/js/app.c4e7c547.js" as="script"><link rel="preload" href="/assets/js/14.68291743.js" as="script"><link rel="preload" href="/assets/js/4.5628d1f8.js" as="script"><link rel="prefetch" href="/assets/js/10.e4d6374f.js"><link rel="prefetch" href="/assets/js/11.3b072d34.js"><link rel="prefetch" href="/assets/js/12.3df17d56.js"><link rel="prefetch" href="/assets/js/13.30af94ab.js"><link rel="prefetch" href="/assets/js/15.846a51e5.js"><link rel="prefetch" href="/assets/js/16.6fa709ae.js"><link rel="prefetch" href="/assets/js/17.794612c8.js"><link rel="prefetch" href="/assets/js/18.88918131.js"><link rel="prefetch" href="/assets/js/19.01df9257.js"><link rel="prefetch" href="/assets/js/20.dee359b9.js"><link rel="prefetch" href="/assets/js/21.658837c9.js"><link rel="prefetch" href="/assets/js/22.4547ae34.js"><link rel="prefetch" href="/assets/js/23.fd4b2884.js"><link rel="prefetch" href="/assets/js/24.9b0b9082.js"><link rel="prefetch" href="/assets/js/25.511dc4f5.js"><link rel="prefetch" href="/assets/js/26.4b2c3113.js"><link rel="prefetch" href="/assets/js/27.818bab65.js"><link rel="prefetch" href="/assets/js/3.7802eb18.js"><link rel="prefetch" href="/assets/js/5.dddde689.js"><link rel="prefetch" href="/assets/js/6.8346498c.js"><link rel="prefetch" href="/assets/js/7.aad6ccca.js"><link rel="prefetch" href="/assets/js/8.7bfd6794.js"><link rel="prefetch" href="/assets/js/9.0b39a487.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.fa8a9be0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a90de6eb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header id="navbarWrapper" class="navbar"><div class="sidebar-button"><i class="iconfont reco-menu"></i></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">zhouli的博客</span></a> <div class="links" style="max-width:nullpx;"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tags
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-up"></i>
+      博文
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link"><i class="iconfont undefined"></i>
+  React学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  Nginx学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link"><i class="iconfont undefined"></i>
+  使用 GitHub Pages 和 VuePress 搭建网站
+</a></li><li class="dropdown-item"><!----> <a href="/Interview/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题汇总
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/yshysh123" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  </a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tags
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-up"></i>
+      博文
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link"><i class="iconfont undefined"></i>
+  React学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  Nginx学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link"><i class="iconfont undefined"></i>
+  使用 GitHub Pages 和 VuePress 搭建网站
+</a></li><li class="dropdown-item"><!----> <a href="/Interview/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题汇总
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/yshysh123" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  </a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/nginx/nginx反向代理.html" class="sidebar-link">反向代理</a></li><li><a href="/nginx/nginx命令.html" class="sidebar-link">常用命令汇总</a></li><li><a href="/nginx/nginx常用配置.html" class="sidebar-link">nginx常用配置</a></li><li><a href="/nginx/nginx负载均衡.html" class="sidebar-link">nginx负载均衡</a></li></ul></div></li></ul> </div> <div class="page" data-v-4bd020d4> <div class="page-title" data-v-4bd020d4><h1 data-v-4bd020d4>nginx介绍</h1> <hr data-v-4bd020d4> <div data-v-2c25cede data-v-4bd020d4><i class="iconfont reco-account" data-v-2c25cede><span data-v-2c25cede>yush</span></i> <i class="iconfont reco-date" data-v-2c25cede><span data-v-2c25cede>2019-3-12</span></i> <!----> <i class="iconfont reco-tag tags" data-v-2c25cede><span class="tag-item" data-v-2c25cede>
+      nginx
+    </span></i></div></div> <div class="content" data-v-4bd020d4><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>nginx 介绍</p></div> <h1 id="nginx"><a href="#nginx" aria-hidden="true" class="header-anchor">#</a> nginx</h1> <p>Nginx 是一款轻量级的 HTTP 服务器，采用事件驱动的异步非阻塞处理方式框架，这让其具有极好的 IO 性能，时常用于服务端的反向代理和负载均衡。</p> <h2 id="nginx-优点"><a href="#nginx-优点" aria-hidden="true" class="header-anchor">#</a> nginx 优点</h2> <ul><li>支持海量高并发：采用 IO 多路复用 epoll。官方测试 Nginx 能够支持 5 万并发链接，实际生产环境中可以支撑 2-4 万并发连接数。</li> <li>内存消耗少：在主流的服务器中 Nginx 目前是内存消耗最小的了，比如我们用 Nginx+PHP，在 3 万并发链接下，开启 10 个 Nginx 进程消耗 150M 内存。</li> <li>免费使用可以商业化：Nginx 为开源软件，采用的是 2-clause BSD-like 协议，可以免费使用，并且可以用于商业。</li> <li>配置文件简单：网络和程序配置通俗易懂，即使非专业运维也能看懂。</li></ul> <h2 id="nginx-默认配置"><a href="#nginx-默认配置" aria-hidden="true" class="header-anchor">#</a> nginx 默认配置</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>user  nginx<span class="token punctuation">;</span>  //用户
+worker_processes  1<span class="token punctuation">;</span>  //进程数 一般和cpu个数一样
+error_log  /var/log/nginx/error.log warn<span class="token punctuation">;</span> //错误日志存放位置
+pid        /var/run/nginx.pid<span class="token punctuation">;</span>   //nginx存放pid位置
+events <span class="token punctuation">{</span>
+  worker_connections  1024<span class="token punctuation">;</span>  //后台允许最大并发数
+<span class="token punctuation">}</span>
+http <span class="token punctuation">{</span>
+  include       /etc/nginx/mime.types<span class="token punctuation">;</span> //文件扩展名映射表
+  default_type  application/octet-stream<span class="token punctuation">;</span>  //默认文件类型
+  log_format  main  <span class="token string">'<span class="token variable">$remote_addr</span> - <span class="token variable">$remote_user</span> [<span class="token variable">$time_local</span>] &quot;<span class="token variable">$request</span>&quot; '</span>
+                    <span class="token string">'<span class="token variable">$status</span> <span class="token variable">$body_bytes_sent</span> &quot;<span class="token variable">$http_referer</span>&quot; '</span>
+                    <span class="token string">'&quot;<span class="token variable">$http_user_agent</span>&quot; &quot;<span class="token variable">$http_x_forwarded_for</span>&quot;'</span><span class="token punctuation">;</span>  //设置日志模式
+  access_log  /var/log/nginx/access.log  main<span class="token punctuation">;</span> //访问日志存放位置
+  sendfile        on<span class="token punctuation">;</span>  //开启告诉传输模式
+  <span class="token comment">#tcp_nopush     on;  //减少网络报文数量</span>
+  keepalive_timeout  65<span class="token punctuation">;</span>  //保持连接时间
+  <span class="token comment">#gzip  on;  //开启gzip</span>
+  include /etc/nginx/conf.d/*.conf<span class="token punctuation">;</span>  //包含自配置文件位置
+<span class="token punctuation">}</span>
+server <span class="token punctuation">{</span>
+  listen       80<span class="token punctuation">;</span>   <span class="token comment">#配置监听端口</span>
+  server_name  localhost<span class="token punctuation">;</span>  //配置域名
+  <span class="token comment">#charset koi8-r;</span>
+  <span class="token comment">#access_log  /var/log/nginx/host.access.log  main;</span>
+  location / <span class="token punctuation">{</span>
+      root   /usr/share/nginx/html<span class="token punctuation">;</span>     <span class="token comment">#服务默认启动目录</span>
+      index  index.html index.htm<span class="token punctuation">;</span>    <span class="token comment">#默认访问文件</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">#error_page  404              /404.html;   # 配置404页面</span>
+  <span class="token comment"># redirect server error pages to the static page /50x.html</span>
+  <span class="token comment">#</span>
+  error_page   500 502 503 504  /50x.html<span class="token punctuation">;</span>   <span class="token comment">#错误状态码的显示页面，配置后需要重启</span>
+  location <span class="token operator">=</span> /50x.html <span class="token punctuation">{</span>
+      root   /usr/share/nginx/html<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment"># proxy the PHP scripts to Apache listening on 127.0.0.1:80</span>
+  <span class="token comment">#</span>
+  <span class="token comment">#location ~ \.php$ {</span>
+  <span class="token comment">#    proxy_pass   http://127.0.0.1;</span>
+  <span class="token comment">#}</span>
+  <span class="token comment"># pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span>
+  <span class="token comment">#</span>
+  <span class="token comment">#location ~ \.php$ {</span>
+  <span class="token comment">#    root           html;</span>
+  <span class="token comment">#    fastcgi_pass   127.0.0.1:9000;</span>
+  <span class="token comment">#    fastcgi_index  index.php;</span>
+  <span class="token comment">#    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</span>
+  <span class="token comment">#    include        fastcgi_params;</span>
+  <span class="token comment">#}</span>
+  <span class="token comment"># deny access to .htaccess files, if Apache's document root</span>
+  <span class="token comment"># concurs with nginx's one</span>
+  <span class="token comment">#</span>
+  <span class="token comment">#location ~ /\.ht {</span>
+  <span class="token comment">#    deny  all;</span>
+  <span class="token comment">#}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br></div></div><h2 id="nginx-权限控制"><a href="#nginx-权限控制" aria-hidden="true" class="header-anchor">#</a> nginx 权限控制</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>location / <span class="token punctuation">{</span>
+  //不允许访问
+  deny   127.0.0.0<span class="token punctuation">;</span>  all（所有）
+  //允许访问
+  allow  127.0.0.0<span class="token punctuation">;</span>  all（所有）
+<span class="token punctuation">}</span>
+// <span class="token operator">=</span>为精确匹配符 img请求和目录允许所有访问
+location <span class="token operator">=</span>/img<span class="token punctuation">{</span>
+  allow all<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+// <span class="token operator">=</span>为精确匹配符 admin目录和请求禁止所有用户访问
+location <span class="token operator">=</span>/admin<span class="token punctuation">{</span>
+  deny all<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+//以php结尾的都禁止访问
+location ~\.php$ <span class="token punctuation">{</span>
+  deny all<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><ul><li>权限是从上往下执行的，当匹配成功，下面的控制权限就不会执行了</li></ul> <h2 id="nginx-常用命令"><a href="#nginx-常用命令" aria-hidden="true" class="header-anchor">#</a> nginx 常用命令</h2> <p><a href="/nginx/nginx命令.html">nginx 常用命令</a></p> <h2 id="nginx-设置虚拟主机"><a href="#nginx-设置虚拟主机" aria-hidden="true" class="header-anchor">#</a> Nginx 设置虚拟主机</h2> <ul><li>创建多个 server 通过修改 listen 不同的端口来设置</li> <li>创建多个 server 通过修改 server_name 不同的 IP 来设置</li> <li>创建多个 server 通过修改 server_name 不同的域名来设置</li></ul> <h2 id="nginx-反向代理"><a href="#nginx-反向代理" aria-hidden="true" class="header-anchor">#</a> Nginx 反向代理</h2> <p><a href="/nginx/nginx反向代理.html">nginx 反向代理</a></p> <h2 id="nginx-适配-pc-或移动设备"><a href="#nginx-适配-pc-或移动设备" aria-hidden="true" class="header-anchor">#</a> Nginx 适配 PC 或移动设备</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>server<span class="token punctuation">{</span>
+  listen 80<span class="token punctuation">;</span>
+  server_name nginx2.jspang.com<span class="token punctuation">;</span>
+  location / <span class="token punctuation">{</span>
+  root /usr/share/nginx/html/pc<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$http_user_agent</span> ~* <span class="token string">'(Android|webOS|iPhone|iPod|BlackBerry)'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    root /usr/share/nginx/html/mobile<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  index index.html<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="gzip"><a href="#gzip" aria-hidden="true" class="header-anchor">#</a> gzip</h2> <ul><li>gzip : 该指令用于开启或 关闭 gzip 模块。</li> <li>gzip_buffers : 设置系统获取几个单位的缓存用于存储 gzip 的压缩结果数据流。</li> <li>gzip_comp_level : gzip 压缩比，压缩级别是 1-9，1 的压缩级别最低，9 的压缩级别最高。压缩级别越高压缩率越大，压缩时间越长。</li> <li>gzip_disable : 可以通过该指令对一些特定的 User-Agent 不使用压缩功能。</li> <li>gzip_min_length:设置允许压缩的页面最小字节数，页面字节数从相应消息头的 Content-length 中进行获取。</li> <li>gzip_http_version：识别 HTTP 协议版本，其值可以是 1.1.或 1.0.</li> <li>gzip_proxied : 用于设置启用或禁用从代理服务器上收到相应内容 gzip 压缩。</li> <li>gzip_vary : 用于在响应消息头中添加 Vary：Accept-Encoding,使代理服务器根据请求头中的 Accept-Encoding 识别是否启用 gzip 压缩。</li></ul> <h2 id="nginx-全局变量"><a href="#nginx-全局变量" aria-hidden="true" class="header-anchor">#</a> nginx 全局变量</h2> <table><thead><tr><th style="text-align:center">变量名</th> <th style="text-align:center">功能</th></tr></thead> <tbody><tr><td style="text-align:center">$host</td> <td style="text-align:center">请求信息中的 Host，如果请求中没有 Host 行，则等于设置的服务器名</td></tr> <tr><td style="text-align:center">$request_method</td> <td style="text-align:center">客户端请求类型，如 GET、POST</td></tr> <tr><td style="text-align:center">$remote_addr</td> <td style="text-align:center">客户端的 IP 地址</td></tr> <tr><td style="text-align:center">$args</td> <td style="text-align:center">请求中的参数</td></tr> <tr><td style="text-align:center">$content_length</td> <td style="text-align:center">请求头中的 Content-length 字段</td></tr> <tr><td style="text-align:center">$http_user_agent</td> <td style="text-align:center">客户端 agent 信息</td></tr> <tr><td style="text-align:center">$http_cookie</td> <td style="text-align:center">客户端 cookie 信息</td></tr> <tr><td style="text-align:center">$remote_addr</td> <td style="text-align:center">客户端的 IP 地址</td></tr> <tr><td style="text-align:center">$remote_port</td> <td style="text-align:center">客户端的端口</td></tr> <tr><td style="text-align:center">$server_protocol</td> <td style="text-align:center">请求使用的协议，如 HTTP/1.0、·HTTP/1.1`</td></tr> <tr><td style="text-align:center">$server_addr</td> <td style="text-align:center">服务器地址</td></tr> <tr><td style="text-align:center">$server_name</td> <td style="text-align:center">服务器名称</td></tr> <tr><td style="text-align:center">$server_port</td> <td style="text-align:center">服务器的端口号</td></tr></tbody></table> <section style="border-top:2px solid #eaecef;padding-top:1rem;margin-top:2rem;"><div><span data-flag-title="Your Article Title" class="leancloud-visitors"><em class="post-meta-item-text">阅读量：</em> <i class="leancloud-visitors-count"></i></span></div> <h3><a href="javascript:;"></a>
+    评 论：
+  </h3> <div id="vcomments"></div></section></div> <!----> <!----> <div class="page-edit" data-v-4bd020d4><!----> <div class="last-updated" data-v-4bd020d4><span class="prefix" data-v-4bd020d4>Last Updated: </span> <span class="time" data-v-4bd020d4>3/19/2019, 10:46:08 AM</span></div></div> <!----> </div> <div class="valine-wrapper" data-v-63f18ac0><div id="valine" style="display:;" data-v-63f18ac0></div></div> <!----> <!----> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-41016a8b data-v-41016a8b><i class="iconfont reco-up" data-v-41016a8b></i></div></div></div>
+    <script src="/assets/js/app.c4e7c547.js" defer></script><script src="/assets/js/14.68291743.js" defer></script><script src="/assets/js/4.5628d1f8.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nginx 学习笔记 | zhouli的博客</title>
+    <meta name="description" content="网站描述">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.a90de6eb.css" as="style"><link rel="preload" href="/assets/js/app.c4e7c547.js" as="script"><link rel="preload" href="/assets/js/13.30af94ab.js" as="script"><link rel="prefetch" href="/assets/js/10.e4d6374f.js"><link rel="prefetch" href="/assets/js/11.3b072d34.js"><link rel="prefetch" href="/assets/js/12.3df17d56.js"><link rel="prefetch" href="/assets/js/14.68291743.js"><link rel="prefetch" href="/assets/js/15.846a51e5.js"><link rel="prefetch" href="/assets/js/16.6fa709ae.js"><link rel="prefetch" href="/assets/js/17.794612c8.js"><link rel="prefetch" href="/assets/js/18.88918131.js"><link rel="prefetch" href="/assets/js/19.01df9257.js"><link rel="prefetch" href="/assets/js/20.dee359b9.js"><link rel="prefetch" href="/assets/js/21.658837c9.js"><link rel="prefetch" href="/assets/js/22.4547ae34.js"><link rel="prefetch" href="/assets/js/23.fd4b2884.js"><link rel="prefetch" href="/assets/js/24.9b0b9082.js"><link rel="prefetch" href="/assets/js/25.511dc4f5.js"><link rel="prefetch" href="/assets/js/26.4b2c3113.js"><link rel="prefetch" href="/assets/js/27.818bab65.js"><link rel="prefetch" href="/assets/js/3.7802eb18.js"><link rel="prefetch" href="/assets/js/4.5628d1f8.js"><link rel="prefetch" href="/assets/js/5.dddde689.js"><link rel="prefetch" href="/assets/js/6.8346498c.js"><link rel="prefetch" href="/assets/js/7.aad6ccca.js"><link rel="prefetch" href="/assets/js/8.7bfd6794.js"><link rel="prefetch" href="/assets/js/9.0b39a487.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.fa8a9be0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a90de6eb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header id="navbarWrapper" class="navbar"><div class="sidebar-button"><i class="iconfont reco-menu"></i></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">zhouli的博客</span></a> <div class="links" style="max-width:nullpx;"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tags
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-up"></i>
+      博文
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link"><i class="iconfont undefined"></i>
+  React学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link router-link-exact-active router-link-active"><i class="iconfont undefined"></i>
+  Nginx学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link"><i class="iconfont undefined"></i>
+  使用 GitHub Pages 和 VuePress 搭建网站
+</a></li><li class="dropdown-item"><!----> <a href="/Interview/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题汇总
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/yshysh123" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  </a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tags
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-up"></i>
+      博文
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link"><i class="iconfont undefined"></i>
+  React学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link router-link-exact-active router-link-active"><i class="iconfont undefined"></i>
+  Nginx学习汇总
+</a></li><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link"><i class="iconfont undefined"></i>
+  使用 GitHub Pages 和 VuePress 搭建网站
+</a></li><li class="dropdown-item"><!----> <a href="/Interview/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题汇总
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/yshysh123" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  </a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/nginx/nginx反向代理.html" class="sidebar-link">反向代理</a></li><li><a href="/nginx/nginx命令.html" class="sidebar-link">常用命令汇总</a></li><li><a href="/nginx/nginx常用配置.html" class="sidebar-link">nginx常用配置</a></li><li><a href="/nginx/nginx负载均衡.html" class="sidebar-link">nginx负载均衡</a></li></ul></div></li></ul> </div> <div class="page" data-v-4bd020d4> <!----> <div class="content" data-v-4bd020d4><h1 id="nginx-学习笔记"><a href="#nginx-学习笔记" aria-hidden="true" class="header-anchor">#</a> Nginx 学习笔记</h1> <p>接触 nginx 大概半年多时间，用于公司的项目部署。慢慢使用过程中也发现了其强大之处。</p></div> <div currentPage="1" class="categories-wrapper" data-v-4bd020d4><div class="abstract-wrapper" data-v-58cd78a5><div class="abstract-item" data-v-58cd78a5><div class="title" data-v-58cd78a5><a href="/nginx/nginx%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1.html" data-v-58cd78a5>nginx负载均衡</a></div> <div class="abstract" data-v-58cd78a5><div class="tip custom-block"><p class="custom-block-title">TIP</p>
+<p>nginx 负载均衡</p>
+</div>
+</div> <hr data-v-58cd78a5> <div data-v-2c25cede data-v-58cd78a5><i class="iconfont reco-account" data-v-2c25cede><span data-v-2c25cede>yush</span></i> <i class="iconfont reco-date" data-v-2c25cede><span data-v-2c25cede>2019-3-12</span></i> <!----> <i class="iconfont reco-tag tags" data-v-2c25cede><span class="tag-item" data-v-2c25cede>
+      nginx
+    </span></i></div></div><div class="abstract-item" data-v-58cd78a5><div class="title" data-v-58cd78a5><a href="/nginx/nginx%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE.html" data-v-58cd78a5>nginx常用配置</a></div> <div class="abstract" data-v-58cd78a5><div class="tip custom-block"><p class="custom-block-title">TIP</p>
+<p>nginx 常用配置</p>
+</div>
+</div> <hr data-v-58cd78a5> <div data-v-2c25cede data-v-58cd78a5><i class="iconfont reco-account" data-v-2c25cede><span data-v-2c25cede>yush</span></i> <i class="iconfont reco-date" data-v-2c25cede><span data-v-2c25cede>2019-3-12</span></i> <!----> <i class="iconfont reco-tag tags" data-v-2c25cede><span class="tag-item" data-v-2c25cede>
+      nginx
+    </span></i></div></div><div class="abstract-item" data-v-58cd78a5><div class="title" data-v-58cd78a5><a href="/nginx/nginx%E5%91%BD%E4%BB%A4.html" data-v-58cd78a5>常用命令汇总</a></div> <div class="abstract" data-v-58cd78a5><div class="tip custom-block"><p class="custom-block-title">TIP</p>
+<p>nginx 常用命令汇总</p>
+</div>
+</div> <hr data-v-58cd78a5> <div data-v-2c25cede data-v-58cd78a5><i class="iconfont reco-account" data-v-2c25cede><span data-v-2c25cede>yush</span></i> <i class="iconfont reco-date" data-v-2c25cede><span data-v-2c25cede>2019-3-12</span></i> <!----> <i class="iconfont reco-tag tags" data-v-2c25cede><span class="tag-item" data-v-2c25cede>
+      nginx
+    </span></i></div></div><div class="abstract-item" data-v-58cd78a5><div class="title" data-v-58cd78a5><a href="/nginx/nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86.html" data-v-58cd78a5>反向代理</a></div> <div class="abstract" data-v-58cd78a5><div class="tip custom-block"><p class="custom-block-title">TIP</p>
+<p>nginx 反向代理</p>
+</div>
+</div> <hr data-v-58cd78a5> <div data-v-2c25cede data-v-58cd78a5><i class="iconfont reco-account" data-v-2c25cede><span data-v-2c25cede>yush</span></i> <i class="iconfont reco-date" data-v-2c25cede><span data-v-2c25cede>2019-3-12</span></i> <!----> <i class="iconfont reco-tag tags" data-v-2c25cede><span class="tag-item" data-v-2c25cede>
+      nginx
+    </span></i></div></div><div class="abstract-item" data-v-58cd78a5><div class="title" data-v-58cd78a5><a href="/nginx/nginx%E4%BB%8B%E7%BB%8D.html" data-v-58cd78a5>nginx介绍</a></div> <div class="abstract" data-v-58cd78a5><div class="tip custom-block"><p class="custom-block-title">TIP</p>
+<p>nginx 介绍</p>
+</div>
+</div> <hr data-v-58cd78a5> <div data-v-2c25cede data-v-58cd78a5><i class="iconfont reco-account" data-v-2c25cede><span data-v-2c25cede>yush</span></i> <i class="iconfont reco-date" data-v-2c25cede><span data-v-2c25cede>2019-3-12</span></i> <!----> <i class="iconfont reco-tag tags" data-v-2c25cede><span class="tag-item" data-v-2c25cede>
+      nginx
+    </span></i></div></div></div> <div class="pagation" style="display:none;" data-v-6f2dd17a><div class="pagation-list" data-v-6f2dd17a><span unselectable="on" class="jump" style="display:none;" data-v-6f2dd17a>Prev</span> <span class="jump" style="display:none;" data-v-6f2dd17a>1</span> <span class="ellipsis" style="display:none;" data-v-6f2dd17a>...</span> <span class="jump bgprimary" data-v-6f2dd17a>1</span> <span class="ellipsis" style="display:none;" data-v-6f2dd17a>...</span> <span class="jump" style="display:none;" data-v-6f2dd17a>1</span> <span class="jump" style="display:none;" data-v-6f2dd17a>Next</span> <span class="jumppoint" data-v-6f2dd17a>跳转到：</span> <span class="jumpinp" data-v-6f2dd17a><input type="text" value="" data-v-6f2dd17a></span> <span class="jump gobtn" data-v-6f2dd17a>GO</span></div></div></div> <!----> <div class="page-edit" data-v-4bd020d4><!----> <div class="last-updated" data-v-4bd020d4><span class="prefix" data-v-4bd020d4>Last Updated: </span> <span class="time" data-v-4bd020d4>3/19/2019, 10:46:08 AM</span></div></div> <!----> </div> <div class="valine-wrapper" data-v-63f18ac0><div id="valine" style="display:;" data-v-63f18ac0></div></div> <!----> <!----> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-41016a8b data-v-41016a8b><i class="iconfont reco-up" data-v-41016a8b></i></div></div></div>
+    <script src="/assets/js/app.c4e7c547.js" defer></script><script src="/assets/js/13.30af94ab.js" defer></script>
+  </body>
+</html>
